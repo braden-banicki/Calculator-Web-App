@@ -1,0 +1,97 @@
+/* General body styles */
+body {
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    display: flex; /* Uses Flexbox layout for centering */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    height: 100vh; /* Makes the body take the full viewport height */
+}
+
+/* Calculator container styles */
+#calculator {
+    max-width: 500px; /* Restricts the width of the calculator */
+    justify-content: center; /* Centers content inside the calculator (Flexbox) */
+    overflow: hidden; /* Hides any content that overflows the calculator's boundaries */
+    background-color: hsl(0, 0%, 5%); /* Dark background color */
+    border-radius: 15px; /* Rounded corners for the calculator container */
+}
+
+/* Display area styles */
+#display {
+    width: 100%; /* Makes the display area take up the full width */
+    padding: 10px; /* Adds padding around the text inside the display */
+    height: 125px; /* Sets a fixed height for the display */
+    font-size: 75px; /* Large font size for numbers and results */
+    text-align: right; /* Aligns the text to the right */
+    border: none; /* Removes the border around the display */
+    background-color: hsl(0, 0%, 15%); /* Dark background color for the display */
+    color: white; /* White text color */
+    overflow: hidden; /* Hides any overflow text if it exceeds the display area */
+    box-sizing: border-box; /* Includes padding in the width/height calculation */
+    font-family: 'Orbitron', sans-serif; /* Uses the Orbitron font for a futuristic look */
+    font-weight: bold; /* Makes the font bold */
+}
+
+/* Keys container - grid layout for buttons */
+#keys {
+    display: grid; /* Uses grid layout for button positioning */
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal-width columns for buttons */
+    gap: 20px; /* Adds space between buttons */
+    padding: 10px; /* Adds padding around the keys */
+}
+
+/* General button styling */
+button {
+    height: 100px; /* Sets a fixed height for the buttons */
+    width: 100px; /* Sets a fixed width for the buttons */
+    font-size: 30px; /* Sets font size for the button text */
+    font-family: 'Orbitron', sans-serif; /* Uses the Orbitron font for a futuristic look */
+    font-weight: bold; /* Makes the font bold */
+    border: none; /* Removes button border */
+    border-radius: 20px; /* Rounded corners for the buttons */
+    background-color: hsl(0, 0%, 25%); /* Dark background color for buttons */
+    color: white; /* White text color */
+    cursor: pointer; /* Shows a pointer cursor when hovering over the button */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: hsl(0, 0%, 35%); /* Changes button background on hover */
+}
+
+/* Button active effect */
+button:active {
+    background-color: hsl(0, 0%, 45%); /* Changes button background when clicked */
+}
+
+/* Styling for the equal button */
+.equal {
+    background-color: hsl(134, 50%, 13%); /* Unique background color for the equal button */
+    grid-column: 4; /* Makes the equal button span across the 4th column */
+}
+
+/* Equal button hover effect */
+.equal:hover {
+    background-color: hsl(134, 50%, 23%); /* Changes equal button background on hover */
+}
+
+/* Equal button active effect */
+.equal:active {
+    background-color: hsl(134, 50%, 33%); /* Changes equal button background when clicked */
+}
+
+/* Styling for operator buttons (+, -, *, /) */
+.operator {
+    background-color: hsl(134, 50%, 13%); /* Unique background color for operator buttons */
+}
+
+/* Operator button hover effect */
+.operator:hover {
+    background-color: hsl(134, 50%, 23%); /* Changes operator button background on hover */
+}
+
+/* Operator button active effect */
+.operator:active {
+    background-color: hsl(134, 50%, 33%); /* Changes operator button background when clicked */
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Meta tag to make the page responsive on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the webpage, which shows up in the browser tab -->
+    <title>Calculator</title>
+    
+    <!-- Link to the external CSS file for styling the calculator -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- Main container for the calculator -->
+<div id="calculator">
+    <!-- Display area where the input and result will be shown -->
+    <input id="display" readonly> <!-- readonly prevents user from typing directly in the display -->
+
+    <!-- Container for the calculator buttons -->
+    <div id="keys">
+        <!-- Buttons for numbers and operators with onclick functions to update the display -->
+        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('3')">3</button>
+        <button class="operator" onclick="appendToDisplay('+')">+</button>
+        
+        <button onclick="appendToDisplay('4')">4</button>
+        <button onclick="appendToDisplay('5')">5</button>
+        <button onclick="appendToDisplay('6')">6</button>
+        <button class="operator" onclick="appendToDisplay('-')">-</button>
+
+        <button onclick="appendToDisplay('7')">7</button>
+        <button onclick="appendToDisplay('8')">8</button>
+        <button onclick="appendToDisplay('9')">9</button>
+        <button class="operator" onclick="appendToDisplay('*')">*</button>
+
+        <button onclick="appendToDisplay('0')">0</button>
+        <button onclick="appendToDisplay('.')">.</button>
+        <!-- Clear button that resets the display -->
+        <button onclick="clearDisplay()">CE</button>
+        <button class="operator" onclick="appendToDisplay('/')">/</button>
+
+        <!-- Equals button to trigger calculation -->
+        <button class="equal" onclick="calculate()">=</button>
+    </div>
+</div>
+
+<!-- External JavaScript file for handling the calculator logic -->
+<script src="index.js"></script>
+
+</body>
+</html>
