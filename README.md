@@ -1,0 +1,1 @@
+This is a simple calculator app built with HTML, CSS, and JavaScript. It provides basic arithmetic functionality including addition, subtraction, multiplication, and division. This project was created to showcase fundamental web development skills.
